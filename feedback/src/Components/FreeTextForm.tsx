@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './FreeTextForm.css';
 
 interface ComponentProps {
-  save: Function
+  next: Function
   updateAnswer: Function
 }
 
@@ -18,7 +18,7 @@ const FreeTextForm = (props: ComponentProps) => {
 
   const checkText = () => {
     props.updateAnswer(freeText, newsSignup)
-    props.save()
+    props.next()
   }
 
   const handleChange = (event: any) => {
@@ -50,7 +50,7 @@ const FreeTextForm = (props: ComponentProps) => {
 
       
       <div onClick={() => checkText()} className="button">
-        {t('button.submit')}
+        {t('button.next')}
       </div>
     </div>
   )

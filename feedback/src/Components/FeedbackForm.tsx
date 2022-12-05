@@ -7,7 +7,6 @@ import FreeTextForm from './FreeTextForm.tsx';
 import FormSummary from './FormSummary.tsx';
 import './FeedbackForm.css';
 import { t } from 'i18next';
-import FormThanks from './FormThanks.tsx';
 
 const langs = {
   en: { nativeName: 'English' },
@@ -79,24 +78,21 @@ const FeedbackForm = () => {
   // Hardcoded to move to the next step.
   const save = () => {
     let form = JSON.stringify(data);
-
-    setFormPart(5);
-    // Form submission will always fail.
     
-    // fetch("url-placeholder", {
-    //   method: 'post',
-    //   body: form,
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
-    //   }
-    // }).then((response) => {
-    //     if (response.status === 201) {
-    //     console.log("Form submitted")
-    //   }
-    // }).catch((error) => {
-    //   console.log(error)
-    // })
+    fetch("url-placeholder", {
+      method: 'post',
+      body: form,
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    }).then((response) => {
+        if (response.status === 201) {
+        console.log("Form submitted")
+      }
+    }).catch((error) => {
+      console.log(error)
+    })
   }
   
   return (
@@ -123,10 +119,8 @@ const FeedbackForm = () => {
             : formPart === 3 ?
               <ScaledForm next={() => setFormPart(4)} updateAnswer={updateQ3} />
               : formPart === 4 ?
-                <FreeTextForm save={() => save()} updateAnswer={updateQ4} />
-                : formPart === 5 ?
-                  <FormThanks />
-                  : <FormSummary />
+                <FreeTextForm next={() => setFormPart(5)} updateAnswer={updateQ4} />
+                  : <FormSummary save={() => save()}  formData={data} />
         }
       </div>
     </>
