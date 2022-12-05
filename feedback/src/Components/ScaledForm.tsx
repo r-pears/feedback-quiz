@@ -16,6 +16,8 @@ interface ComponentProps {
 const ScaledForm = (props: ComponentProps) => {
   const [scaledValue, setScaledValue] = useState(0);
 
+
+  // Check that one value has been chosen, otherwise return.
   const checkValues = () => {
     if (scaledValue === 0) return;
 
