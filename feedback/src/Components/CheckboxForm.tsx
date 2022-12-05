@@ -19,6 +19,7 @@ const CheckboxForm = (props: ComponentProps) => {
   const [mark4, setMark4] = useState(false)
   const [mark5, setMark5] = useState(false)
 
+  // Check that at least one options has been chosen.
   const checkAnswers = () => {
     const answers = {
       1: mark1,
@@ -34,6 +35,7 @@ const CheckboxForm = (props: ComponentProps) => {
     }
   }
 
+  // Toggle the checkboxs between chosen / not chosen.
   const toggleAnswer = (index: number) => {
     if (index === 0) {
       setMark1(!mark1);
