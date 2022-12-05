@@ -1,4 +1,4 @@
-import { t } from 'i18next';
+import { t, use } from 'i18next';
 import React, { useState } from 'react';
 import './CheckboxForm.css';
 
@@ -18,6 +18,7 @@ const CheckboxForm = (props: ComponentProps) => {
   const [mark3, setMark3] = useState(false)
   const [mark4, setMark4] = useState(false)
   const [mark5, setMark5] = useState(false)
+  const [formError, setFormError] = useState(false);
 
   // Check that at least one options has been chosen.
   const checkAnswers = () => {
@@ -32,11 +33,14 @@ const CheckboxForm = (props: ComponentProps) => {
     if (Object.values(answers).indexOf(true) > -1) {
       props.updateAnswer(answers);
       props.next()      
+    } else {
+      setFormError(true)
     }
   }
 
   // Toggle the checkboxs between chosen / not chosen.
   const toggleAnswer = (index: number) => {
+    setFormError(false)
     if (index === 0) {
       setMark1(!mark1);
     } else if (index === 1) {
@@ -77,6 +81,12 @@ const CheckboxForm = (props: ComponentProps) => {
           <div className='selfCenter leftMargin'>{t('checkbox.alternative5')}</div>
         </div>
       </div>
+
+      {formError &&
+        <div className='formError'>
+          {t('form.error')}
+        </div>
+      }
       
       <div onClick={() => checkAnswers()} className="button">
         {t('button.next')}

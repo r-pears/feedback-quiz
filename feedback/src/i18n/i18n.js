@@ -55,6 +55,9 @@ i18n
             next: `Next`,
             reset: `Reset form`,
             submit: `Submit`,
+          },
+          form: {
+            error: `You have to choose an alternative.`
           }
         }
       },
@@ -96,6 +99,9 @@ i18n
             next: `Nästa`,
             reset: `Starta om`,
             submit: `Skicka in`,
+          },
+          form: {
+            error: `Du måste välja ett alternativ.`
           }
         }
       }

@@ -25,6 +25,16 @@ h2 {
   height: 100%;
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
+
+/** Form Errors and Warnings */
+.formError {
+  text-align: center;
+  color: #ff405e;
+}
+
 /** Flex classes */
 .flex {
   display: flex;
@@ -80,8 +90,4 @@ h2 {
 
 .button.red:hover {
   background-color: #ff405e;
-}
-
-.cursorPointer {
-  cursor: pointer;
 }
