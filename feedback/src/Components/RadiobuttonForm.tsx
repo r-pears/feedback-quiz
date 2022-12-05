@@ -17,10 +17,12 @@ const RadiobuttonForm = (props: ComponentProps) => {
   const [alternative, setAlternative] = useState(0);
   const { t } = useTranslation();
 
+  // Send tracking information.
   const registerStartForm = () => {
     console.log('send to track how many started the form')
   }
 
+  // Check to make sure an option has been selected.
   const checkAnswer = () => {
     if (alternative === 0) return;
     registerStartForm()
