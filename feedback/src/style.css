@@ -1,0 +1,87 @@
+/** Main rulesets */
+
+body {
+  margin: 0;
+  padding: 0;;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.feedbackBackground {
+  background-color: #21276e;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/** Fonts */
+h2 {
+  margin-bottom: 0;
+}
+
+/** Elements */
+.h100 {
+  height: 100%;
+}
+
+/** Flex classes */
+.flex {
+  display: flex;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.selfCenter {
+  align-self: center;
+}
+
+/** Margins */
+.topMargin {
+  margin-top: 15px;
+}
+
+.bottomMargin {
+ margin-bottom: 15px;
+}
+
+.leftMargin {
+  margin-left: 15px;
+}
+
+/** Buttons */
+.button {
+  background-color: #000026;
+  color: #fff;
+  padding: 10px 9px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #383d5c;
+}
+
+.button.red {
+  background-color: #c00;
+}
+
+.button.red:hover {
+  background-color: #ff405e;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
