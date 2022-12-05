@@ -1,4 +1,4 @@
-import { t, use } from 'i18next';
+import { t } from 'i18next';
 import React, { useState } from 'react';
 import './CheckboxForm.css';
 
