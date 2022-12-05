@@ -62,6 +62,10 @@ i18n
           news: {
             signup: `I agree.`,
             text: `Do you want to receive newsletters and tips from us? Signup here!`,
+          },
+          summary: {
+            title: `Summary`,
+            question: `Do you want to subscribe?`,
           }
         }
       },
@@ -110,6 +114,10 @@ i18n
           news: {
             signup: `Jag vill få nyhetsbrev.`,
             text: `Vill du få nyhetsbrev och tips från oss?`,
+          },
+          summary: {
+            title: `Summering`,
+            question: 'Vill du prenumerera?',
           }
         }
       }
