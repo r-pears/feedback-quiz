@@ -72,26 +72,28 @@ const FeedbackForm = () => {
     })
   }
 
-  // Submitting the form data to dummy API, will never be succesful
+  // Submitting the form data to dummy API, will never be succesful, hence commented out.
+  // Hardcoded to move to the next step.
   const save = () => {
     let form = JSON.stringify(data);
 
-    fetch("url-placeholder", {
-      method: 'post',
-      body: form,
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }
-    }).then((response) => {
-        if (response.status === 201) {
-        console.log("Form submitted")
-      }
-    }).catch((error) => {
-      // Will always fail
-      console.log(error)
-      setFormPart(5)
-    })
+    setFormPart(5);
+    // Form submission will always fail.
+    
+    // fetch("url-placeholder", {
+    //   method: 'post',
+    //   body: form,
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json'
+    //   }
+    // }).then((response) => {
+    //     if (response.status === 201) {
+    //     console.log("Form submitted")
+    //   }
+    // }).catch((error) => {
+    //   console.log(error)
+    // })
   }
   
   return (
