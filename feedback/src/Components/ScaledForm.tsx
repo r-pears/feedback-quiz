@@ -26,7 +26,7 @@ const ScaledForm = (props: ComponentProps) => {
   return (
     <div className="h100 flex flexCol justifyBetween">
       <div>
-        <h2>{t('scaled.title')}</h2>
+        <h2>{t('scaled.question')}</h2>
         <div>{t('scaled.instructions')}</div>
 
         <div onClick={() => setScaledValue(1)} className={"flex scaledBox topMargin " + (scaledValue === 1 ? 'chosen' : '')}>

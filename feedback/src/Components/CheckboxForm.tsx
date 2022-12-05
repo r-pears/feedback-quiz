@@ -51,7 +51,7 @@ const CheckboxForm = (props: ComponentProps) => {
   return (
     <div className='h100 flex flexCol justifyBetween'>
       <div>
-        <h2>{t('checkbox.title')}</h2>
+        <h2>{t('checkbox.question')}</h2>
         <div>{t('checkbox.instructions')}</div>
 
         <div onClick={() => toggleAnswer(0)} className={"flex cursorPointer topMargin checkHover "}>

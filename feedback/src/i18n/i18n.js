@@ -29,7 +29,7 @@ i18n
             alternative5: `Bunny`,
           },
           checkbox: {
-            title: `What did you like about the consultation?`,
+            question: `What did you like about the consultation?`,
             instructions: `You can choose multiple options.`,
             alternative1: `The veterinary was knowledgeable`,
             alternative2: `Excellent video quality`,
@@ -38,13 +38,18 @@ i18n
             alternative5: `I had time to ask all my questions`
           },
           scaled :{
-            title: `Would you recommend us to a friend?`,
+            question: `Would you recommend us to a friend?`,
             instructions: `Choose an between 1-5.`,
             alternative1: `1 - No`,
             alternative2: `2 - Unlikely`,
             alternative3: `3 - Maybe`,
             alternative4: `4 - Likely`,
             alternative5: `5 - Yes!`,
+          },
+          text: {
+            question: ``,
+            instruction: ``,
+            placeholder: ``,
           },
           button: {
             next: `Next`,
@@ -65,7 +70,7 @@ i18n
             alternative5: `Kanin`,
           },
           checkbox: {
-            title: `Vad gillade du med mötet?`,
+            question: `Vad gillade du med mötet?`,
             instructions: `Du kan välja flera alternativ.`,
             alternative1: `Veterinären var mycket kunnig`,
             alternative2: `Mycket bra videokvalité`,
@@ -74,13 +79,18 @@ i18n
             alternative5: `Jag fick svar på alla mina frågor`
           },
           scaled :{
-            title: `Skulle du rekommendera oss till en vän?`,
+            question: `Skulle du rekommendera oss till en vän?`,
             instructions: `Välj från 1-5.`,
             alternative1: `1 - Nej`,
             alternative2: `2 - Osannolikt`,
             alternative3: `3 - Kanske`,
             alternative4: `4 - Sannolikt`,
             alternative5: `5 - Ja!`,
+          },
+          text: {
+            question: ``,
+            instruction: ``,
+            placeholder: ``,
           },
           button: {
             next: `Nästa`,

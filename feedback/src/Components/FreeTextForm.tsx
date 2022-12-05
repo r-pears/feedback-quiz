@@ -26,7 +26,7 @@ const FreeTextForm = (props: ComponentProps) => {
       <div>
         <h2>{t('text.question')}</h2>
         <div>{t('text.instruction')}</div>
-        <input type="text" className='textArea' value={freeText} onChange={handleChange}  />
+        <input placeholder={t('text.placeholder')} type="text" className='textArea' value={freeText} onChange={handleChange}  />
       </div>
 
       <div onClick={() => checkText()} className="button">
