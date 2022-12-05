@@ -47,9 +47,9 @@ i18n
             alternative5: `5 - Yes!`,
           },
           text: {
-            question: ``,
-            instruction: ``,
-            placeholder: ``,
+            question: `Would you like to add something?`,
+            instruction: `Write your opinions below (voluntary).`,
+            placeholder: `Write here.`,
           },
           button: {
             next: `Next`,
@@ -88,9 +88,9 @@ i18n
             alternative5: `5 - Ja!`,
           },
           text: {
-            question: ``,
-            instruction: ``,
-            placeholder: ``,
+            question: `Vill du lägga till något?`,
+            instruction: `Skriv ned dina åsikter (frivilligt).`,
+            placeholder: `Skriv här.`,
           },
           button: {
             next: `Nästa`,
