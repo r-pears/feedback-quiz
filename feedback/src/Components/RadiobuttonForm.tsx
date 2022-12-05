@@ -28,25 +28,25 @@ const RadiobuttonForm = (props: ComponentProps) => {
         <h2>{t('radio.question')}</h2>
         <div>{t('radio.instruction')}</div>
 
-        <div onClick={() => setAlternative(1)} className="flex topMargin cursorPointer">
+        <div onClick={() => setAlternative(1)} className="flex topMargin cursorPointer radioBtnDiv">
           <div className={"radioBtn " + (alternative === 1 ? 'chosen' : '')} />
-          <div className='selfCenter'>{t('radio.alternative1')}</div>
+          <div className='selfCenter leftMargin'>{t('radio.alternative1')}</div>
         </div>
-        <div onClick={() => setAlternative(2)} className="flex topMargin cursorPointer">
+        <div onClick={() => setAlternative(2)} className="flex topMargin cursorPointer radioBtnDiv">
           <div className={"radioBtn " + (alternative === 2 ? 'chosen' : '')} />
-          <div className='selfCenter'>{t('radio.alternative2')}</div>
+          <div className='selfCenter leftMargin'>{t('radio.alternative2')}</div>
         </div>
-        <div onClick={() => setAlternative(3)} className="flex topMargin cursorPointer">
+        <div onClick={() => setAlternative(3)} className="flex topMargin cursorPointer radioBtnDiv">
           <div className={"radioBtn " + (alternative === 3 ? 'chosen' : '')} />
-          <div className='selfCenter'>{t('radio.alternative3')}</div>
+          <div className='selfCenter leftMargin'>{t('radio.alternative3')}</div>
         </div>
-        <div onClick={() => setAlternative(4)} className="flex topMargin cursorPointer">
+        <div onClick={() => setAlternative(4)} className="flex topMargin cursorPointer radioBtnDiv">
           <div className={"radioBtn " + (alternative === 4 ? 'chosen' : '')} />
-          <div className='selfCenter'>{t('radio.alternative4')}</div>
+          <div className='selfCenter leftMargin'>{t('radio.alternative4')}</div>
         </div>
-        <div onClick={() => setAlternative(5)} className="flex topMargin cursorPointer">
+        <div onClick={() => setAlternative(5)} className="flex topMargin cursorPointer radioBtnDiv">
           <div className={"radioBtn " + (alternative === 5 ? 'chosen' : '')} />
-          <div className='selfCenter'>{t('radio.alternative5')}</div>
+          <div className='selfCenter leftMargin'>{t('radio.alternative5')}</div>
         </div>        
       </div>
 
