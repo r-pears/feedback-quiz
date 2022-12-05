@@ -1,0 +1,38 @@
+.feedbackContainer {
+  background-color: #fff;
+  width: calc(100% - 30px);
+  max-width: 540px;
+  height: calc(100% - 30px);
+  max-height: 520px;
+  box-shadow: 12px 12px 2px 5px #19204f;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.langSwitch {
+  width: fit-content;
+  padding: 5px;
+  background-color: #383d5c;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.button_segment {
+  width: 80px;
+  height: 34px;
+  background-color: #383d5c;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button_segment:hover {
+  background-color: #4e5580;
+
+}
+
+.button_segment.chosen {
+  background-color: #000026;
+}

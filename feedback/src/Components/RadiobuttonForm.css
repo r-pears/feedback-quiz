@@ -1,0 +1,18 @@
+.radioBtn {
+  background-image: url('../../public/Icons/paw.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.radioBtn:hover {
+  opacity: 0.5;
+}
+
+.radioBtn.chosen {
+  background-image: url('../../public/Icons/paw_blue.png');
+}

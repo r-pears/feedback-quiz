@@ -1,0 +1,15 @@
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000026;
+  border-radius: 5px;
+}
+
+.checkHover:hover{
+  opacity: 0.5;
+}
+
+.checkbox.chosen {
+  background-color: #94ABFF;
+  border-color: #94ABFF;
+}

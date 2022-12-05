@@ -1,0 +1,43 @@
+.puppyFace {
+   width: 50px;
+   height: 50px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+}
+
+.puppyFace.nr1 {
+  background-image: url('../../public//Icons/puppy1.jpeg');
+}
+
+.puppyFace.nr2 {
+  background-image: url('../../public//Icons/puppy2.jpeg');
+}
+
+.puppyFace.nr3 {
+  background-image: url('../../public//Icons/puppy3.jpeg');
+}
+
+.puppyFace.nr4 {
+  background-image: url('../../public//Icons/puppy4.jpeg');
+}
+
+.puppyFace.nr5 {
+  background-image: url('../../public//Icons/puppy5.jpeg');
+}
+
+.scaledBox {
+  border: 1px solid #000026;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scaledBox:hover {
+  opacity: 0.7;
+}
+
+.scaledBox.chosen {
+  border-color: #94ABFF;
+  box-shadow: 5px 5px 5px 1px #21276e;
+}
