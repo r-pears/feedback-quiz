@@ -11,13 +11,19 @@ interface ComponentProps {
  * 
  * Multiple choice question, can only choose one option.
  * Have to choose an option to go to the next page.
+ * Tracks how many people started filling out the form.
  */
 const RadiobuttonForm = (props: ComponentProps) => {
   const [alternative, setAlternative] = useState(0);
   const { t } = useTranslation();
 
+  const registerStartForm = () => {
+    console.log('send to track how many started the form')
+  }
+
   const checkAnswer = () => {
     if (alternative === 0) return;
+    registerStartForm()
     props.updateAnswer(alternative)
     props.next();
   }
