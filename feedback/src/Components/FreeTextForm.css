@@ -1,0 +1,10 @@
+.textArea {
+  border: 1px solid #21276e;
+  width: calc(100% - 5px);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+
+.textArea:focus {
+  outline: none;
+}

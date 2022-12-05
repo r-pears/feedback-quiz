@@ -29,11 +29,11 @@ const FreeTextForm = (props: ComponentProps) => {
       <div>
         <h2>{t('text.question')}</h2>
         <div>{t('text.instruction')}</div>
-        <input placeholder={t('text.placeholder')} type="text" className='textArea' value={freeText} onChange={handleChange}  />
+        <textarea placeholder={t('text.placeholder')} type="text" rows={15} className='textArea topMargin' value={freeText} onChange={handleChange}  /> 
       </div>
 
       <div onClick={() => checkText()} className="button">
-
+        {t('button.submit')}
       </div>
     </div>
   )
