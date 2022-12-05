@@ -57,7 +57,7 @@ i18n
             submit: `Submit`,
           },
           form: {
-            error: `You have to choose an alternative.`
+            error: `You must choose an alternative.`
           }
         }
       },
