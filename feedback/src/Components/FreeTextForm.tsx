@@ -7,6 +7,11 @@ interface ComponentProps {
   updateAnswer: Function
 }
 
+/** Free Text Form 
+*
+* Text box for free input, can be left empty.
+* When finished submit the form to the API.
+*/
 const FreeTextForm = (props: ComponentProps) => {
   const [freeText, setFreetext] = useState('');
 
