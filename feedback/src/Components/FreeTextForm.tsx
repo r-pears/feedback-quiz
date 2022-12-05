@@ -11,8 +11,6 @@ const FreeTextForm = (props: ComponentProps) => {
   const [freeText, setFreetext] = useState('');
 
   const checkText = () => {
-    if (freeText.length < 1) return;
-
     props.updateAnswer(freeText)
     props.save()
   }
