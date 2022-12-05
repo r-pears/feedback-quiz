@@ -19,6 +19,7 @@ interface FormData {
   question2: Array<boolean>,
   question3: number,
   question4: string,
+  newsletter: boolean,
 }
 
 /** Main component handling the feedback form.
@@ -39,7 +40,8 @@ const FeedbackForm = () => {
       question1: 0,
       question2: [],
       question3: 0,
-      question4: ''
+      question4: '',
+      newsletter: false,
     });
     setFormPart(1);
   };
@@ -65,10 +67,11 @@ const FeedbackForm = () => {
     })
   }
 
-  const updateQ4 = (val: string) => {
+  const updateQ4 = (val: string, bool: boolean) => {
     setData({
       ...data,
-      question4: val
+      question4: val,
+      newsletter: bool
     })
   }
 

@@ -20,6 +20,10 @@ h2 {
   margin-bottom: 0;
 }
 
+.fontSmall {
+  font-size: 14px;
+}
+
 /** Elements */
 .h100 {
   height: 100%;

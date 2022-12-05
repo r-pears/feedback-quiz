@@ -58,6 +58,10 @@ i18n
           },
           form: {
             error: `You must choose an alternative.`
+          },
+          news: {
+            signup: `I agree.`,
+            text: `Do you want to receive newsletters and tips from us? Signup here!`,
           }
         }
       },
@@ -102,6 +106,10 @@ i18n
           },
           form: {
             error: `Du måste välja ett alternativ.`
+          },
+          news: {
+            signup: `Jag vill få nyhetsbrev.`,
+            text: `Vill du få nyhetsbrev och tips från oss?`,
           }
         }
       }

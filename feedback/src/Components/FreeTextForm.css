@@ -8,3 +8,23 @@
 .textArea:focus {
   outline: none;
 }
+
+/** Newsletter signup */
+.newsLetterBox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #21276e;
+  border-radius: 3px;
+}
+
+.newsletter:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.newsLetterBox.chosen {
+  background-image: url('../../public/Icons/check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
