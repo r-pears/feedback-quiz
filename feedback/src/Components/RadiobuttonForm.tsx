@@ -69,7 +69,7 @@ const RadiobuttonForm = (props: ComponentProps) => {
       </div>
 
       {formError &&
-        <div className='formError'>
+        <div data-testid="radioError" className='formError'>
           {t('form.error')}
         </div>
       }
