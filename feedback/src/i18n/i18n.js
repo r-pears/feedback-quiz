@@ -66,7 +66,7 @@ i18n
             disagree: `You didn't sign up for our newsletter`,
           },
           summary: {
-            title: `Summary`,
+            title: `Review your answers before submitting`,
           },
           thanks: {
             title: `Thank you!`,
@@ -127,7 +127,7 @@ i18n
             disagree: `Du vill inte få vårt nyhetsbrev`,
           },
           summary: {
-            title: `Summering`,
+            title: `Se dina svar innan du skickar in`,
           },
           thanks: {
             title: `Tack för ditt svar!`,
