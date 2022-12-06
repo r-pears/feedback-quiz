@@ -1,5 +1,5 @@
 # feedback-quiz
-Feedback Form with different type of input questions.
+Feedback Form with different type of input questionsn written using React.
 
 # Disclaimer
 No API is used in this project, the POST is prepared but commented out, as well as any outbound links.
@@ -7,7 +7,7 @@ No API is used in this project, the POST is prepared but commented out, as well 
 # Requirements
 Node
 
-# To install
+# To install dependencies
 npm install
 
 # To run application
