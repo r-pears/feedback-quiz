@@ -67,6 +67,14 @@ i18n
           },
           summary: {
             title: `Summary`,
+          },
+          thanks: {
+            title: `Thank you!`,
+            extra: `Check out these helpful articles and guides.`,
+            suggestion1: `How to train a puppy`,
+            suggestion2: `How to groom a bunny`,
+            suggestion3: `Kitten-indoor or not?`,
+            suggestion4: `Are boars good pets?`,
           }
         }
       },
@@ -120,6 +128,14 @@ i18n
           },
           summary: {
             title: `Summering`,
+          },
+          thanks: {
+            title: `Tack för ditt svar!`,
+            extra: `Här är några artiklar och guider som kan hjälpa dig.`,
+            suggestion1: `Så tränar du en valp`,
+            suggestion2: `Pälsvård för kaniner`,
+            suggestion3: `Inomhuskatt eller inte?`,
+            suggestion4: `Vildsvin som husdjur`,
           }
         }
       }
