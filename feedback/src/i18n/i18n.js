@@ -62,10 +62,11 @@ i18n
           news: {
             signup: `I agree.`,
             text: `Do you want to receive newsletters and tips from us? Signup here!`,
+            agree: `You've signed up for our newsletter!`,
+            disagree: `You didn't sign up for our newsletter`,
           },
           summary: {
             title: `Summary`,
-            question: `Do you want to subscribe?`,
           }
         }
       },
@@ -114,10 +115,11 @@ i18n
           news: {
             signup: `Jag vill få nyhetsbrev.`,
             text: `Vill du få nyhetsbrev och tips från oss?`,
+            agree: `Du vill prenumera på vårt nyhetsbrev`,
+            disagree: `Du vill inte få vårt nyhetsbrev`,
           },
           summary: {
             title: `Summering`,
-            question: 'Vill du prenumerera?',
           }
         }
       }

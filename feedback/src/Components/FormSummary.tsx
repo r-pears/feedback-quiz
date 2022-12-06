@@ -1,5 +1,6 @@
 import { t } from 'i18next';
 import React from 'react'
+import './FormSummary.css';
 
 interface ComponentProps {
   formData: {
@@ -18,9 +19,9 @@ const FormSummary = (props: ComponentProps) => {
       <div>
         <h2>{t('summary.title')}</h2>
         <h4>{t('radio.question')}</h4>
-        <div>{t('radio.alternative' + props.formData.question1)}</div>
+        <div className='summaryAnswer'>{t('radio.alternative' + props.formData.question1)}</div>
         <h4>{t('checkbox.question')}</h4>
-        <div>
+        <div className='summaryAnswer'>
           {props.formData.question2[1] &&
             <div>{t('checkbox.alternative1')}</div>
           }
@@ -38,9 +39,16 @@ const FormSummary = (props: ComponentProps) => {
           }
         </div>
         <h4>{t('scaled.question')}</h4>
-        <div>{t('scaled.alternative' + props.formData.question3)}</div>
+        <div className='summaryAnswer'>{t('scaled.alternative' + props.formData.question3)}</div>
         <h4>{t('text.question')}</h4>
-        <h4>{t('summary.question')}</h4>
+        <div className='summaryAnswer'>{props.formData.question4}</div>
+        <h4>
+          {props.formData.newsletter ?
+            t('news.agree')
+            :
+            t('news.disagree')
+          }          
+        </h4>
       </div>
       <div onClick={() => props.save()} className="button">
         {t('button.submit')}
