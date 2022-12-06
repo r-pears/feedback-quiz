@@ -1,4 +1,6 @@
 .summaryAnswer {
   font-style: italic;
   font-size: 14px;
+  max-height: 120px;
+  overflow-y: scroll;
 }
