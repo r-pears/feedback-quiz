@@ -7,6 +7,7 @@ import FreeTextForm from './FreeTextForm.tsx';
 import FormSummary from './FormSummary.tsx';
 import './FeedbackForm.css';
 import { t } from 'i18next';
+import FormThanks from './FormThanks.tsx';
 
 const langs = {
   en: { nativeName: 'English' },
@@ -77,22 +78,25 @@ const FeedbackForm = () => {
   // Submitting the form data to dummy API, will never be succesful, hence commented out.
   // Hardcoded to move to the next step.
   const save = () => {
-    let form = JSON.stringify(data);
-    
-    fetch("url-placeholder", {
-      method: 'post',
-      body: form,
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }
-    }).then((response) => {
-        if (response.status === 201) {
-        console.log("Form submitted")
-      }
-    }).catch((error) => {
-      console.log(error)
-    })
+    // let form = JSON.stringify(data);
+
+    // fetch("url-placeholder", {
+    //   method: 'post',
+    //   body: form,
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json'
+    //   }
+    // }).then((response) => {
+    //     if (response.status === 201) {
+    //     console.log("Form submitted")
+    //   }
+    // }).catch((error) => {
+    //   console.log(error)
+    // })
+
+    // HARDCODED TO MOVE ON
+    setFormPart(6)
   }
   
   return (
@@ -120,7 +124,9 @@ const FeedbackForm = () => {
               <ScaledForm next={() => setFormPart(4)} updateAnswer={updateQ3} />
               : formPart === 4 ?
                 <FreeTextForm next={() => setFormPart(5)} updateAnswer={updateQ4} />
-                  : <FormSummary save={() => save()}  formData={data} />
+                : formPart === 5 ?
+                  <FormSummary save={() => save()} formData={data} />
+                  : <FormThanks />
         }
       </div>
     </>
